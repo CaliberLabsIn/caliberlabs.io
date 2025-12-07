@@ -4,7 +4,7 @@ Official website for Caliber Research Lab, a pioneering research organization fo
 
 ## 🌐 Live Website
 
-Visit us at: [https://caliberlabs.io](https://caliberlabs.io)
+Visit us at: [https://caliberlabs.in](https://caliberlabs.in)
 
 ## 📋 About
 
