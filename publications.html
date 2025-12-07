@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Header -->
-
-    <nav class="navbar">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -38,32 +39,34 @@
         </div>
     </nav>
 
-    <section class="page-hero">
+    <main id="main-content">
+    <section class="page-hero" aria-label="Page header">
         <div class="container">
             <h1>Publications & Innovation</h1>
             <p>Research papers, patents, and technical contributions</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="Publications content">
         <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 style="margin-bottom: 2rem;">Building Our Research Portfolio</h2>
-                <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-gray);">
+            <div class="content-narrow text-center">
+                <h2 class="mb-lg">Building Our Research Portfolio</h2>
+                <p class="text-large mb-lg">
                     As a research-driven organization, we are committed to publishing our findings in top-tier journals and conferences. We actively support our team members in presenting their work to the scientific community.
                 </p>
-                <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 3rem; color: var(--text-gray);">
+                <p class="text-large mb-xl">
                     Our IP portfolio is growing, with multiple patent applications in progress across our manufacturing and biomaterials research divisions.
                 </p>
-                <div style="background: var(--bg-light); padding: 3rem; border-radius: 12px;">
-                    <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Publications Coming Soon</h3>
-                    <p style="color: var(--text-gray);">Check back for updates on our latest research papers and patent filings.</p>
+                <div class="section-bg-light">
+                    <h3 class="mb-sm" style="color: var(--primary-cyan);">Publications Coming Soon</h3>
+                    <p>Check back for updates on our latest research papers and patent filings.</p>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

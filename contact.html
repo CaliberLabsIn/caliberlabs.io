@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Header -->
-
-    <nav class="navbar">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -38,102 +39,103 @@
         </div>
     </nav>
 
-    <section class="page-hero">
+    <main id="main-content">
+    <section class="page-hero" aria-label="Page header">
         <div class="container">
             <h1>Get in Touch</h1>
             <p>Let's discuss research collaborations, partnerships, or career opportunities</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="Contact information">
         <div class="container">
-            <div style="max-width: 1000px; margin: 0 auto;">
+            <div class="content-wide">
                 
                 <!-- Contact Cards -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                <div class="grid-2-col mb-xl">
                     
-                    <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-sm); text-align: center;">
-                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-cyan), var(--accent-light)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">📍</div>
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Location</h3>
-                        <p style="color: var(--text-gray); line-height: 1.8;">
+                    <div class="contact-card">
+                        <div class="icon-circle" aria-hidden="true">📍</div>
+                        <h3>Location</h3>
+                        <p>
                             Caliber Research Lab<br>
                             Chikhli, Gujarat,<br>
                             India.
                         </p>
                     </div>
 
-                    <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-sm); text-align: center;">
-                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-cyan), var(--accent-light)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">💼</div>
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Careers</h3>
-                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Join our research team</p>
-                        <a href="mailto:careers@caliberlab.in" style="color: var(--primary-cyan); font-weight: 600; word-break: break-all;">careers@caliberlab.in</a>
-                        <div style="margin-top: 1rem;">
-                            <a href="careers.html" class="btn btn-primary" style="display: inline-block; margin-top: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem;">View Open Positions</a>
+                    <div class="contact-card">
+                        <div class="icon-circle" aria-hidden="true">💼</div>
+                        <h3>Careers</h3>
+                        <p>Join our research team</p>
+                        <a href="mailto:careers@caliberlab.in" aria-label="Email us about careers">careers@caliberlab.in</a>
+                        <div class="mt-lg">
+                            <a href="careers.html" class="btn btn-primary" aria-label="View open positions">View Open Positions</a>
                         </div>
                     </div>
 
-                    <div style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-sm); text-align: center;">
-                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-cyan), var(--accent-light)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">🤝</div>
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Partnerships</h3>
-                        <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Research collaborations & business inquiries</p>
-                        <a href="mailto:partnerships@caliberlab.in" style="color: var(--primary-cyan); font-weight: 600; word-break: break-all;">partnerships@caliberlab.in</a>
+                    <div class="contact-card">
+                        <div class="icon-circle" aria-hidden="true">🤝</div>
+                        <h3>Partnerships</h3>
+                        <p>Research collaborations & business inquiries</p>
+                        <a href="mailto:partnerships@caliberlab.in" aria-label="Email us about partnerships">partnerships@caliberlab.in</a>
                     </div>
                     
                 </div>
 
                 <!-- Main Contact Section -->
-                <div style="background: var(--bg-light); padding: 3rem; border-radius: 16px;">
-                    <div style="text-align: center; margin-bottom: 2rem;">
-                        <h2 style="margin-bottom: 1rem;">Get in Touch</h2>
-                        <p style="color: var(--text-gray); font-size: 1.125rem;">We're always interested in connecting with talented researchers, potential partners, and those passionate about innovation</p>
+                <div class="section-bg-light mb-xl">
+                    <div class="text-center mb-lg">
+                        <h2 class="mb-sm">Get in Touch</h2>
+                        <p class="text-large">We're always interested in connecting with talented researchers, potential partners, and those passionate about innovation</p>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div class="grid-auto-fit mt-lg">
                         
                         <div>
-                            <h4 style="margin-bottom: 1rem; color: var(--primary-dark);">🔬 For Researchers</h4>
-                            <p style="color: var(--text-gray); margin-bottom: 1rem;">Explore career opportunities across our manufacturing and regenerative medicine divisions</p>
-                            <a href="careers.html" style="color: var(--primary-cyan); font-weight: 600;">View Open Positions →</a>
+                            <h4 class="mb-sm">🔬 For Researchers</h4>
+                            <p class="mb-sm">Explore career opportunities across our manufacturing and regenerative medicine divisions</p>
+                            <a href="careers.html" class="link-arrow" aria-label="View open positions">View Open Positions →</a>
                         </div>
 
                         <div>
-                            <h4 style="margin-bottom: 1rem; color: var(--primary-dark);">🤝 For Collaborators</h4>
-                            <p style="color: var(--text-gray); margin-bottom: 1rem;">Interested in research partnerships, academic collaborations, or technology licensing</p>
-                            <a href="mailto:careers@caliberlab.in" style="color: var(--primary-cyan); font-weight: 600;">Email us →</a>
+                            <h4 class="mb-sm">🤝 For Collaborators</h4>
+                            <p class="mb-sm">Interested in research partnerships, academic collaborations, or technology licensing</p>
+                            <a href="mailto:careers@caliberlab.in" class="link-arrow" aria-label="Email us">Email us →</a>
                         </div>
 
                         <div>
-                            <h4 style="margin-bottom: 1rem; color: var(--primary-dark);">💼 For Investors</h4>
-                            <p style="color: var(--text-gray); margin-bottom: 1rem;">Learn about investment opportunities in our cutting-edge research divisions</p>
-                            <a href="mailto:careers@caliberlab.in" style="color: var(--primary-cyan); font-weight: 600;">Contact us →</a>
+                            <h4 class="mb-sm">💼 For Investors</h4>
+                            <p class="mb-sm">Learn about investment opportunities in our cutting-edge research divisions</p>
+                            <a href="mailto:careers@caliberlab.in" class="link-arrow" aria-label="Contact us">Contact us →</a>
                         </div>
                         
                     </div>
 
-                    <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
-                        <p style="color: var(--text-gray); margin-bottom: 1.5rem;">Or send us an email directly:</p>
-                        <a href="mailto:careers@caliberlab.in" class="btn btn-primary">Send Email</a>
+                    <div class="text-center mt-xl" style="padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                        <p class="mb-lg">Or send us an email directly:</p>
+                        <a href="mailto:careers@caliberlab.in" class="btn btn-primary" aria-label="Send email">Send Email</a>
                     </div>
                 </div>
 
                 <!-- What to Expect -->
-                <div style="margin-top: 3rem; text-align: center;">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-dark);">What to Expect</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div class="mt-xl text-center">
+                    <h3 class="mb-lg">What to Expect</h3>
+                    <div class="grid-3-col">
                         <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--primary-dark);">Quick Response</h4>
-                            <p style="color: var(--text-gray); font-size: 0.9rem;">We aim to respond within 48 hours</p>
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;" aria-hidden="true">⚡</div>
+                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Quick Response</h4>
+                            <p style="font-size: 0.9rem;">We aim to respond within 48 hours</p>
                         </div>
                         <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--primary-dark);">Focused Discussion</h4>
-                            <p style="color: var(--text-gray); font-size: 0.9rem;">Direct conversation with our team</p>
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;" aria-hidden="true">🎯</div>
+                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Focused Discussion</h4>
+                            <p style="font-size: 0.9rem;">Direct conversation with our team</p>
                         </div>
                         <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
-                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--primary-dark);">Collaborative Approach</h4>
-                            <p style="color: var(--text-gray); font-size: 0.9rem;">We value meaningful partnerships</p>
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;" aria-hidden="true">🤝</div>
+                            <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Collaborative Approach</h4>
+                            <p style="font-size: 0.9rem;">We value meaningful partnerships</p>
                         </div>
                     </div>
                 </div>
@@ -141,8 +143,9 @@
             </div>
         </div>
     </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

@@ -17,10 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Header -->
-
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -45,7 +46,8 @@
     </nav>
 
     <!-- Page Hero -->
-    <section class="page-hero">
+    <main id="main-content">
+    <section class="page-hero" aria-label="Page header">
         <div class="container">
             <h1>Our Research Divisions</h1>
             <p>Dual verticals driving innovation at the frontier of engineering and life sciences</p>
@@ -200,18 +202,19 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="section cta-section" aria-label="Call to action">
         <div class="container">
             <div class="cta-card">
                 <h2>Collaborate With Us</h2>
                 <p>Interested in research partnerships, technology licensing, or academic collaboration?</p>
-                <a href="contact.html" class="btn btn-white">Get in Touch</a>
+                <a href="contact.html" class="btn btn-white" aria-label="Get in touch">Get in Touch</a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

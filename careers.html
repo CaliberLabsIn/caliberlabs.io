@@ -18,10 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Header -->
-
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -46,7 +47,8 @@
     </nav>
 
     <!-- Page Hero -->
-    <section class="page-hero">
+    <main id="main-content">
+    <section class="page-hero" aria-label="Page header">
         <div class="container">
             <h1>Join Our Research Team</h1>
             <p>Build the future of manufacturing and regenerative medicine with us</p>
@@ -550,7 +552,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

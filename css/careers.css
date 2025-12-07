@@ -71,15 +71,25 @@
 .job-card {
     background: var(--bg-white);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    transition: all var(--transition-base);
+}
+
+[data-theme='dark'] .job-card {
+    background: var(--bg-light);
 }
 
 .job-card:hover {
     box-shadow: var(--shadow-md);
     border-color: var(--primary-cyan);
+    transform: translateY(-2px);
+}
+
+.job-card:focus-within {
+    outline: 2px solid var(--primary-cyan);
+    outline-offset: 2px;
 }
 
 .job-header {
@@ -127,16 +137,27 @@
     border: 2px solid var(--primary-cyan);
     color: var(--primary-cyan);
     padding: 0.5rem 1.5rem;
-    border-radius: 6px;
+    min-height: var(--touch-target-min);
+    border-radius: var(--border-radius-sm);
     cursor: pointer;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all var(--transition-base);
     white-space: nowrap;
 }
 
 .btn-expand:hover {
     background: var(--primary-cyan);
     color: var(--bg-white);
+    transform: translateY(-1px);
+}
+
+.btn-expand:active {
+    transform: translateY(0);
+}
+
+.btn-expand:focus-visible {
+    outline: 2px solid var(--primary-cyan);
+    outline-offset: 2px;
 }
 
 .job-actions .btn-primary {
@@ -155,12 +176,14 @@
 .job-details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
-    margin-top: 1.5rem;
+    transition: max-height var(--transition-slow), opacity var(--transition-base);
+    margin-top: var(--spacing-md);
+    opacity: 0;
 }
 
 .job-details.active {
     max-height: 3000px;
+    opacity: 1;
 }
 
 .job-section {
@@ -215,12 +238,19 @@
 .modal-content {
     background-color: var(--bg-white);
     margin: auto;
-    padding: 3rem;
-    border-radius: 16px;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-xl);
     max-width: 600px;
     width: 90%;
     position: relative;
-    animation: slideIn 0.3s ease;
+    animation: slideIn var(--transition-base);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+[data-theme='dark'] .modal-content {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
 }
 
 @keyframes slideIn {
@@ -242,11 +272,24 @@
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color var(--transition-base), transform var(--transition-fast);
+    width: var(--touch-target-min);
+    height: var(--touch-target-min);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .close:hover {
     color: var(--primary-dark);
+    background: var(--bg-light);
+    transform: rotate(90deg);
+}
+
+.close:focus-visible {
+    outline: 2px solid var(--primary-cyan);
+    outline-offset: 2px;
 }
 
 .modal-content h2 {

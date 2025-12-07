@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Header -->
-
-    <nav class="navbar">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -38,41 +39,42 @@
         </div>
     </nav>
 
-    <section class="page-hero">
+    <main id="main-content">
+    <section class="page-hero" aria-label="Page header">
         <div class="container">
             <h1>Our Capabilities</h1>
             <p>State-of-the-art facilities and expertise across engineering disciplines</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="Core competencies">
         <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h2 style="margin-bottom: 2rem;">Core Competencies</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Mechanical Engineering</h3>
-                        <p style="color: var(--text-gray);">CAD/CAM, FEA, kinematics, precision mechanics, DFM</p>
+            <div class="content-centered">
+                <h2 class="mb-xl">Core Competencies</h2>
+                <div class="grid-auto-fit mt-xl">
+                    <div class="capability-card">
+                        <h3>Mechanical Engineering</h3>
+                        <p>CAD/CAM, FEA, kinematics, precision mechanics, DFM</p>
                     </div>
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Embedded Systems</h3>
-                        <p style="color: var(--text-gray);">PCB design, firmware development, real-time control, sensor integration</p>
+                    <div class="capability-card">
+                        <h3>Embedded Systems</h3>
+                        <p>PCB design, firmware development, real-time control, sensor integration</p>
                     </div>
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Materials Science</h3>
-                        <p style="color: var(--text-gray);">Biomaterials, ceramics, composites, material characterization</p>
+                    <div class="capability-card">
+                        <h3>Materials Science</h3>
+                        <p>Biomaterials, ceramics, composites, material characterization</p>
                     </div>
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Software Development</h3>
-                        <p style="color: var(--text-gray);">Simulation, AI/ML, distributed systems, control algorithms</p>
+                    <div class="capability-card">
+                        <h3>Software Development</h3>
+                        <p>Simulation, AI/ML, distributed systems, control algorithms</p>
                     </div>
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Biomedical Research</h3>
-                        <p style="color: var(--text-gray);">Tissue engineering, biocompatibility, clinical validation</p>
+                    <div class="capability-card">
+                        <h3>Biomedical Research</h3>
+                        <p>Tissue engineering, biocompatibility, clinical validation</p>
                     </div>
-                    <div style="padding: 2rem; background: var(--bg-white); border-radius: 12px; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">Prototyping & Testing</h3>
-                        <p style="color: var(--text-gray);">Rapid prototyping, performance validation, quality assurance</p>
+                    <div class="capability-card">
+                        <h3>Prototyping & Testing</h3>
+                        <p>Rapid prototyping, performance validation, quality assurance</p>
                     </div>
                 </div>
             </div>
@@ -81,15 +83,16 @@
 
     <section class="section" style="background: var(--bg-light);">
         <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 style="margin-bottom: 2rem;">Lab Facilities</h2>
-                <p style="font-size: 1.125rem; margin-bottom: 3rem; color: var(--text-gray);">Our Chikhli facility houses advanced equipment for R&D, prototyping, and small-scale manufacturing across both research divisions.</p>
-                <p style="color: var(--text-gray);">Detailed facility information available upon request for partnership discussions.</p>
+            <div class="content-narrow text-center">
+                <h2 class="mb-lg">Lab Facilities</h2>
+                <p class="text-large mb-xl">Our Chikhli facility houses advanced equipment for R&D, prototyping, and small-scale manufacturing across both research divisions.</p>
+                <p>Detailed facility information available upon request for partnership discussions.</p>
             </div>
         </div>
     </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">

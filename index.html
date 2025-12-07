@@ -17,8 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- Navigation with Logo -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="index.html" class="navbar-logo">
@@ -43,7 +46,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <main id="main-content">
+    <section class="hero" aria-label="Hero section">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Pioneering Research in<br><span class="gradient-text">Regenerative Medicine</span><br>and <span class="gradient-text">Advanced Manufacturing</span></h1>
@@ -162,15 +166,16 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="section cta-section" aria-label="Call to action">
         <div class="container">
             <div class="cta-card">
                 <h2>Join Our Research Team</h2>
                 <p>We're hiring exceptional engineers and researchers across embedded systems, mechanical design, simulation, biomaterials, and business development</p>
-                <a href="careers.html" class="btn btn-white">View Open Positions</a>
+                <a href="careers.html" class="btn btn-white" aria-label="View open positions">View Open Positions</a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
