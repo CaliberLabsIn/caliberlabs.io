@@ -321,6 +321,54 @@
     line-height: 1.4;
 }
 
+/* Featured Job Card (Open Application) */
+.job-card-featured {
+    border-left: 4px solid var(--primary-cyan) !important;
+    background: linear-gradient(135deg, rgba(93, 173, 226, 0.08) 0%, rgba(93, 173, 226, 0.03) 100%);
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+[data-theme='dark'] .job-card-featured {
+    background: linear-gradient(135deg, rgba(93, 173, 226, 0.12) 0%, rgba(93, 173, 226, 0.06) 100%);
+}
+
+.job-card-featured::before {
+    opacity: 1 !important;
+    width: 4px;
+}
+
+.job-card-featured:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateX(6px);
+}
+
+/* Featured Tag */
+.tag-featured {
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--accent-light) 100%) !important;
+    color: var(--bg-white) !important;
+    border: none !important;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    box-shadow: 0 2px 8px rgba(93, 173, 226, 0.3);
+    position: relative;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.tag-featured:hover {
+    box-shadow: 0 4px 12px rgba(93, 173, 226, 0.4);
+    transform: translateY(-1px);
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 2px 8px rgba(93, 173, 226, 0.3);
+    }
+    50% {
+        box-shadow: 0 2px 12px rgba(93, 173, 226, 0.5);
+    }
+}
+
 /* Application Modal */
 .modal {
     display: none;
