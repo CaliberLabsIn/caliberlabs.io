@@ -217,7 +217,7 @@
 
 .btn-expand:hover {
     background: var(--primary-cyan);
-    color: var(--bg-white);
+    color: #FFFFFF !important;
     transform: translateY(-1px);
 }
 
@@ -367,6 +367,65 @@
     50% {
         box-shadow: 0 2px 12px rgba(93, 173, 226, 0.5);
     }
+}
+
+/* Highlight Section Styles */
+.job-section-highlight {
+    background: rgba(255, 193, 7, 0.1);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid #FFC107;
+    margin-bottom: var(--spacing-lg);
+}
+
+[data-theme='dark'] .job-section-highlight {
+    background: rgba(255, 193, 7, 0.15);
+    border-left-color: #FFC107;
+}
+
+.highlight-title {
+    color: #FF9800 !important;
+    font-size: 1.1rem !important;
+    margin-bottom: var(--spacing-sm) !important;
+}
+
+[data-theme='dark'] .highlight-title {
+    color: #FFC107 !important;
+}
+
+.highlight-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-gray);
+}
+
+[data-theme='dark'] .highlight-text {
+    color: var(--text-gray);
+}
+
+.highlight-emphasis {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #FF6B00;
+    margin-bottom: var(--spacing-sm);
+}
+
+[data-theme='dark'] .highlight-emphasis {
+    color: #FFC107;
+}
+
+.highlight-note {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-top: var(--spacing-sm);
+    font-style: italic;
+    color: var(--text-light);
+}
+
+[data-theme='dark'] .highlight-note {
+    color: var(--text-gray);
 }
 
 /* Application Modal */

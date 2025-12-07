@@ -406,16 +406,18 @@ a:focus-visible {
 
 .btn-primary {
     background: var(--primary-cyan);
-    color: var(--bg-white);
+    color: #FFFFFF !important;
 }
 
 .btn-primary:hover {
     background: var(--accent-light);
+    color: #FFFFFF !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
 .btn-primary:active {
+    color: #FFFFFF !important;
     transform: translateY(0);
     box-shadow: var(--shadow-sm);
 }
@@ -440,10 +442,19 @@ a:focus-visible {
     color: var(--primary-dark);
 }
 
+[data-theme='dark'] .btn-white {
+    background: #FFFFFF;
+    color: var(--primary-dark);
+}
+
 .btn-white:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme='dark'] .btn-white:hover {
+    background: #FFFFFF;
 }
 
 .btn-white:active {
@@ -558,6 +569,11 @@ a:focus-visible {
 .link-arrow:hover {
     color: var(--primary-dark);
     gap: 0.5rem;
+}
+
+[data-theme='dark'] .link-arrow:hover {
+    color: var(--primary-cyan);
+    opacity: 0.9;
 }
 
 .link-arrow:focus-visible {
@@ -697,9 +713,13 @@ a:focus-visible {
     max-width: 250px;
     margin-bottom: 1rem;
     padding: 0.75rem;
-    background: var(--bg-white);
+    background: #FFFFFF;
     border-radius: 8px;
     object-fit: contain;
+}
+
+[data-theme='dark'] .footer-logo {
+    background: #FFFFFF;
 }
 
 .footer-section h4 {
@@ -1034,6 +1054,11 @@ a:focus-visible {
 .contact-card a:hover {
     color: var(--primary-dark);
     text-decoration: underline;
+}
+
+[data-theme='dark'] .contact-card a:hover {
+    color: var(--primary-cyan);
+    opacity: 0.9;
 }
 
 /* Capabilities Page Specific */
