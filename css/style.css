@@ -583,12 +583,24 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] .footer-section a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .footer-section a:hover {
     color: var(--primary-cyan);
 }
 
 .footer-section p {
     color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] .footer-section p {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .footer-bottom {
