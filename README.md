@@ -1,6 +1,6 @@
-# Caliber Research Lab - Official Website
+# CaliberX Research Labs - Official Website
 
-Official website for Caliber Research Lab, a pioneering research organization focused on advanced manufacturing and regenerative medicine.
+Official website for CaliberX Research Labs, a pioneering research organization focused on advanced manufacturing and regenerative medicine.
 
 ## 🌐 Live Website
 
@@ -8,7 +8,7 @@ Visit us at: [https://caliberlabs.in](https://caliberlabs.in)
 
 ## 📋 About
 
-Caliber Research Lab is dedicated to groundbreaking research in:
+CaliberX Research Labs is dedicated to groundbreaking research in:
 - **Advanced Manufacturing**: Bio 3D printers, FDM systems, SLA systems, and water cutting technologies
 - **Regenerative Medicine**: Next-generation biomaterials and tissue engineering for oral healthcare
 
@@ -173,4 +173,4 @@ We welcome contributions! Please feel free to submit a Pull Request. For major c
 
 ---
 
-**Built with ❤️ by the Caliber Research Lab Team**
+**Built with ❤️ by the CaliberX Research Labs Team**

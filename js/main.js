@@ -1,4 +1,4 @@
-// Main JavaScript for Caliber Research Lab Website
+// Main JavaScript for CaliberX Research Labs Website
 
 // Sticky Navbar Scroll Effect
 let lastScroll = 0;
