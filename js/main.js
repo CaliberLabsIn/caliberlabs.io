@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initHeaderScroll();
   initSmoothScroll();
+  initContactForm();
 });
 
 /**
@@ -46,6 +47,34 @@ function initThemeToggle() {
       favicon.href = theme === 'dark' ? 'images/favicon-dark.svg' : 'images/favicon-light.svg';
     }
   }
+}
+
+/**
+ * Contact Form - open mailto with pre-filled message
+ */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = (form.querySelector('#name')?.value || '').trim();
+    const email = (form.querySelector('#email')?.value || '').trim();
+    const subject = (form.querySelector('#subject')?.value || '').trim();
+    const message = (form.querySelector('#message')?.value || '').trim();
+
+    const subjectLine = subject || 'Contact from CaliberX website';
+    const body = [
+      name && `Name: ${name}`,
+      email && `Email: ${email}`,
+      message && `\nMessage:\n${message}`
+    ].filter(Boolean).join('\n');
+
+    const mailto = 'mailto:careers@caliberlab.in?'
+      + `subject=${encodeURIComponent(subjectLine)}`
+      + (body ? `&body=${encodeURIComponent(body)}` : '');
+    window.location.href = mailto;
+  });
 }
 
 /**

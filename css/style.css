@@ -736,6 +736,103 @@ p {
   scroll-margin-top: 100px;
 }
 
+/* Single integrated research block: one card per division */
+.research-block {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+}
+
+.research-block-header {
+  margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.research-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.02em;
+}
+
+.research-block-title {
+  font-size: 1.85rem;
+  line-height: 1.25;
+  margin-bottom: var(--space-md);
+}
+
+.research-block-lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.research-block-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.research-body-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-sm) 0;
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--accent);
+  color: var(--text-primary);
+  display: inline-block;
+}
+
+/* Focus areas: label + description, no bullets */
+.research-focus-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.research-focus-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.research-focus-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.research-focus-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* Current Projects / Technical Capabilities: simple list */
+.research-projects-list {
+  margin: 0 0 0 1.25rem;
+  padding: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.research-projects-list li {
+  margin-bottom: var(--space-xs);
+}
+
+.research-projects-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* ============================================
    CAPABILITIES PAGE
    ============================================ */
@@ -941,6 +1038,44 @@ p {
 .contact-form textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+/* FAQ grid: 3 columns on desktop, 2 on tablet, 1 on small screens */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq-grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-grid .card h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-sm);
+}
+
+.faq-grid .card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  flex-grow: 1;
 }
 
 /* ============================================
