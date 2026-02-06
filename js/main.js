@@ -22,6 +22,7 @@ function initThemeToggle() {
   const savedTheme = localStorage.getItem('theme') || 'light';
   html.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
+  updateFavicon(savedTheme);
   
   themeToggle?.addEventListener('click', () => {
     const currentTheme = html.getAttribute('data-theme');
@@ -30,11 +31,19 @@ function initThemeToggle() {
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
+    updateFavicon(newTheme);
   });
   
   function updateThemeIcon(theme) {
     if (themeIcon) {
       themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+  }
+  
+  function updateFavicon(theme) {
+    const favicon = document.getElementById('favicon');
+    if (favicon) {
+      favicon.href = theme === 'dark' ? 'images/favicon-dark.svg' : 'images/favicon-light.svg';
     }
   }
 }
