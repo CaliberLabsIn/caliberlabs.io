@@ -1,348 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CaliberX Research Labs - Our research divisions in advanced manufacturing and regenerative medicine">
-    <title>Research | CaliberX Research Labs</title>
-    
-    <!-- Favicon - SVG with PNG fallback -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="alternate icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaliberX Research Labs - Research in regenerative medicine and advanced manufacturing technologies.">
+  <title>Research | CaliberX Research Labs</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="navbar-logo">
-                    <img class="logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                </a>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html" class="active">Research</a></li>
-                    <li><a href="capabilities.html">Capabilities</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
-    <!-- Page Hero -->
-    <main id="main-content">
-    <section class="page-hero" aria-label="Page header">
-        <div class="container">
-            <h1>Our Research Divisions</h1>
-            <p>Dual verticals driving innovation at the frontier of engineering and life sciences</p>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-text">CALIBER<span>X</span></span>
+        </a>
+        <nav class="nav">
+          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="research.html" class="nav-link active">Research</a></li>
+            <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="research-hero">
+      <div class="container">
+        <div class="section-header">
+          <h1>Our Research</h1>
+          <p>Driving innovation at the intersection of engineering and life sciences through rigorous R&D</p>
         </div>
+      </div>
     </section>
 
-    <!-- Manufacturing Division -->
-    <section class="section" id="manufacturing">
-        <div class="container">
-            <div class="research-division">
-                <div class="division-badge">Advanced Manufacturing Research</div>
-                <h2>Creating Low-Cost Manufacturing Solutions</h2>
-                <p class="lead-text">We develop revolutionary 3D printing and manufacturing technologies that democratize access to advanced fabrication capabilities. Our research focuses on radical cost reduction without compromising precision or capability.</p>
-                
-                <div class="research-areas">
-                    <h3>Research Focus Areas</h3>
-                    <div class="areas-grid">
-                        <div class="area-card">
-                            <h4>Bio 3D Printing Systems</h4>
-                            <p>Developing affordable bioprinting platforms for tissue engineering and regenerative medicine applications. Focus on precision dispensing systems, temperature control, and biocompatible material handling.</p>
-                            <ul class="tech-list">
-                                <li>Multi-material extrusion systems</li>
-                                <li>Precision thermal regulation</li>
-                                <li>Sterile environment control</li>
-                                <li>Sub-micron positioning accuracy</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>FDM & SLA Systems</h4>
-                            <p>Next-generation desktop to industrial-scale additive manufacturing systems with advanced motion control, innovative extruder designs, and improved build quality.</p>
-                            <ul class="tech-list">
-                                <li>Custom kinematics (CoreXY, Delta)</li>
-                                <li>High-speed motion planning</li>
-                                <li>Advanced slicing algorithms</li>
-                                <li>Multi-material capabilities</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>Precision Water Cutting</h4>
-                            <p>Developing high-pressure water jet cutting systems for versatile material processing with focus on cost-effective componentry and precision nozzle design.</p>
-                            <ul class="tech-list">
-                                <li>High-pressure fluid dynamics</li>
-                                <li>Abrasive mixing systems</li>
-                                <li>5-axis cutting heads</li>
-                                <li>CNC motion control</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>Embedded Controls & Firmware</h4>
-                            <p>Developing robust, real-time control systems, custom PCB designs, and open-source firmware adaptations for all manufacturing platforms.</p>
-                            <ul class="tech-list">
-                                <li>Real-time motion control</li>
-                                <li>Custom PCB development</li>
-                                <li>Sensor integration</li>
-                                <li>Safety systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Regenerative Medicine Section -->
+    <section class="section research-section" id="regenerative">
+      <div class="container">
+        <div class="cards-grid">
+          <div>
+            <span class="hero-label">🧬 Division 1</span>
+            <h2 class="mt-md">Regenerative Medicine Research</h2>
+            <p class="mt-md" style="font-size: 1.1rem;">
+              Our regenerative medicine division focuses on developing next-generation biomaterials and tissue engineering solutions for oral healthcare and beyond. We're pioneering affordable, effective treatments for bone and soft tissue regeneration.
+            </p>
+            <h3 class="mt-xl">Research Focus Areas</h3>
+            <ul class="division-list mt-md">
+              <li><strong>Bone Regeneration Materials:</strong> Developing bioactive scaffolds and growth factor delivery systems for bone defect repair</li>
+              <li><strong>Soft Tissue Engineering:</strong> Creating biomimetic materials for gum and periodontal tissue regeneration</li>
+              <li><strong>Advanced Biomaterials:</strong> Synthesizing novel biocompatible polymers and ceramics with enhanced properties</li>
+              <li><strong>Clinical Translation:</strong> Working with dental and medical professionals to validate and refine our solutions</li>
+            </ul>
+          </div>
+          <div class="card" style="align-self: start;">
+            <div class="card-icon">🔬</div>
+            <h3>Current Projects</h3>
+            <ul class="division-list">
+              <li>Bioactive glass scaffolds for alveolar bone regeneration</li>
+              <li>Injectable hydrogels for minimally invasive tissue repair</li>
+              <li>3D-printed patient-specific implants</li>
+              <li>Growth factor encapsulation technologies</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Regenerative Medicine Division -->
-    <section class="section section-alt" id="regenerative">
-        <div class="container">
-            <div class="research-division">
-                <div class="division-badge">Regenerative Medicine Research</div>
-                <h2>Pioneering Next-Generation Healthcare</h2>
-                <p class="lead-text">Caliber Regenerative Medicine and Materials is focused on developing advanced synthetic bone graft substitutes (BGS) and biologics for orthopedic, dental, and maxillofacial applications, prioritizing products that enhance osseointegration, are fully bioresorbable, and offer a significant cost advantage over imported materials.</p>
-                
-                <div class="research-areas">
-                    <h3>Research Focus Areas</h3>
-                    <div class="areas-grid">
-                        <div class="area-card">
-                            <h4>Bone Regeneration Materials</h4>
-                            <p>Developing next-generation synthetic bone graft materials for dental and maxillofacial applications. Focus on bioactive ceramics and composite materials that promote rapid osseointegration.</p>
-                            <ul class="tech-list">
-                                <li>Advanced Bioactive composites</li>
-                                <li>3D bioprinting</li>
-                                <li>Integrating biologically active agents</li>
-                                <li>Economical Synthetic Scaffolds</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>Advanced Biomaterials</h4>
-                            <p>Research into novel material compositions, surface modifications, and processing techniques to enhance biocompatibility and regenerative potential.</p>
-                            <ul class="tech-list">
-                                <li>Material characterization</li>
-                                <li>Biocompatibility testing</li>
-                                <li>Degradation kinetics</li>
-                                <li>Mechanical properties optimization</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>Tissue Engineering</h4>
-                            <p>Investigating scaffold architectures, cell-material interactions, and vascularization strategies for effective tissue regeneration.</p>
-                            <ul class="tech-list">
-                                <li>3D scaffold design</li>
-                                <li>Cell culture studies</li>
-                                <li>In vitro testing protocols</li>
-                                <li>Biomimetic design</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="area-card">
-                            <h4>Clinical Translation</h4>
-                            <p>Bridging laboratory research to clinical application through rigorous validation, regulatory compliance, and collaboration with dental institutions.</p>
-                            <ul class="tech-list">
-                                <li>Pre-clinical studies</li>
-                                <li>Clinical trial design</li>
-                                <li>Regulatory pathway navigation</li>
-                                <li>Academic partnerships</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Advanced Manufacturing Section -->
+    <section class="section research-section" id="manufacturing" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="cards-grid">
+          <div>
+            <span class="hero-label">⚙️ Division 2</span>
+            <h2 class="mt-md">Advanced Manufacturing Research</h2>
+            <p class="mt-md" style="font-size: 1.1rem;">
+              Our manufacturing division is revolutionizing accessible 3D printing technology. We're developing low-cost, high-precision systems that democratize advanced manufacturing for research labs, startups, and educational institutions.
+            </p>
+            <h3 class="mt-xl">Research Focus Areas</h3>
+            <ul class="division-list mt-md">
+              <li><strong>Bio 3D Printers:</strong> Custom extrusion systems for bioink and biomaterial deposition with precise temperature and pressure control</li>
+              <li><strong>FDM Systems:</strong> High-precision filament printers with advanced motion control and multi-material capabilities</li>
+              <li><strong>SLA Technology:</strong> Resin-based stereolithography for high-resolution prototyping and end-use parts</li>
+              <li><strong>Water Cutting:</strong> Precision abrasive waterjet systems for cutting complex geometries in various materials</li>
+            </ul>
+          </div>
+          <div class="card" style="align-self: start;">
+            <div class="card-icon">🖨️</div>
+            <h3>Technical Capabilities</h3>
+            <ul class="division-list">
+              <li>Custom embedded control systems (STM32, ESP32)</li>
+              <li>Real-time motion planning algorithms</li>
+              <li>Precision thermal management</li>
+              <li>Multi-axis CNC integration</li>
+              <li>IoT-enabled monitoring and control</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Research Philosophy -->
+    <!-- CTA -->
     <section class="section">
-        <div class="container">
-            <div class="philosophy-section">
-                <h2>Our Research Philosophy</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-item">
-                        <h3>Fundamental Innovation</h3>
-                        <p>We don't just improve existing solutions—we rethink problems from first principles to create breakthrough innovations that open new possibilities.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h3>Cost-Conscious Design</h3>
-                        <p>Every project is guided by the mission to make advanced technology accessible. We engineer for affordability without sacrificing quality or capability.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h3>Open Collaboration</h3>
-                        <p>We believe in the power of collaboration with academic institutions, industry partners, and the open-source community to accelerate progress.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h3>Indigenous R&D</h3>
-                        <p>Committed to building truly Indian intellectual property and manufacturing capabilities aligned with Make in India initiatives.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="cta-section">
+          <h2>Collaborate With Us</h2>
+          <p>We're open to academic partnerships, industry collaborations, and research grants. Let's push the boundaries of innovation together.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- CTA Section -->
-    <section class="section cta-section" aria-label="Call to action">
-        <div class="container">
-            <div class="cta-card">
-                <h2>Collaborate With Us</h2>
-                <p>Interested in research partnerships, technology licensing, or academic collaboration?</p>
-                <a href="contact.html" class="btn btn-white" aria-label="Get in touch">Get in Touch</a>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">CALIBER<span>X</span></span>
+          </a>
+          <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
         </div>
-    </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img class="footer-logo logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                    <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Research</h4>
-                    <ul>
-                        <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
-                        <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
-                        <li><a href="capabilities.html">Capabilities</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Chikhli, Gujarat, India</p>
-                    <p>Email: <a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
-            </div>
+        <div class="footer-column">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
+            <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Chikhli, Gujarat, India</li>
+            <li><a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
-    <style>
-        .section-alt {
-            background: var(--bg-light);
-        }
-        
-        .research-division {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .division-badge {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: linear-gradient(135deg, var(--primary-cyan), var(--accent-light));
-            color: var(--bg-white);
-            border-radius: 20px;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-        
-        .lead-text {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            margin-bottom: 3rem;
-        }
-        
-        .research-areas h3 {
-            margin-bottom: 2rem;
-        }
-        
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        
-        .area-card {
-            background: var(--bg-white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .area-card h4 {
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-        }
-        
-        .area-card > p {
-            margin-bottom: 1.5rem;
-        }
-        
-        .tech-list li {
-            padding: 0.4rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: var(--text-gray);
-            font-size: 0.95rem;
-        }
-        
-        .tech-list li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--primary-cyan);
-        }
-        
-        .philosophy-section {
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .philosophy-section h2 {
-            margin-bottom: 3rem;
-        }
-        
-        .philosophy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            text-align: left;
-        }
-        
-        .philosophy-item {
-            padding: 1.5rem;
-        }
-        
-        .philosophy-item h3 {
-            margin-bottom: 1rem;
-            color: var(--primary-cyan);
-        }
-    </style>
+  <script src="js/main.js"></script>
 </body>
 </html>

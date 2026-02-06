@@ -1,219 +1,251 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CaliberX Research Labs - Pioneering advanced research in manufacturing technologies and regenerative medicine">
-    <title>CaliberX Research Labs | Advanced R&D in Manufacturing & Regenerative Medicine</title>
-    
-    <!-- Favicon - SVG with PNG fallback -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="alternate icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaliberX Research Labs - Pioneering research in advanced manufacturing and regenerative medicine. Low-cost 3D printing, bio-printers, and next-generation biomaterials.">
+  <meta name="keywords" content="CaliberX, Research Labs, Bio 3D Printing, Regenerative Medicine, Advanced Manufacturing, Biomaterials">
+  <title>CaliberX Research Labs | Advanced R&D in Manufacturing & Regenerative Medicine</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="CaliberX Research Labs Home">
+          <span class="logo-text">CALIBER<span>X</span></span>
+        </a>
+        
+        <nav class="nav" aria-label="Main navigation">
+          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          
+          <ul class="nav-list" role="list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="research.html" class="nav-link">Research</a></li>
+            <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
     
-    <!-- Navigation with Logo -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="navbar-logo">
-                    <img class="logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                </a>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="capabilities.html">Capabilities</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
-    <main id="main-content">
-    <section class="hero" aria-label="Hero section">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Pioneering Research in<br><span class="gradient-text">Regenerative Medicine</span><br>and <span class="gradient-text">Advanced Manufacturing</span></h1>
-                <p class="hero-subtitle">Transforming ideas into breakthrough innovations through cutting-edge R&D in low-cost manufacturing solutions and next-generation biomaterials</p>
-                <div class="hero-cta">
-                    <a href="research.html" class="btn btn-primary">Explore Our Research</a>
-                    <a href="careers.html" class="btn btn-secondary">Join Our Team</a>
-                </div>
-            </div>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-label">🔬 R&D Innovation Hub</span>
+          <h1>
+            Pioneering Research in <span class="highlight">Regenerative Medicine</span> and <span class="highlight">Advanced Manufacturing</span>
+          </h1>
+          <p class="hero-description">
+            Transforming ideas into breakthrough innovations through cutting-edge R&D in low-cost manufacturing solutions and next-generation biomaterials
+          </p>
+          <div class="hero-buttons">
+            <a href="research.html" class="btn btn-primary">Explore Our Research</a>
+            <a href="careers.html" class="btn btn-secondary">Join Our Team</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Research Focus -->
-    <section class="section research-focus">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Research Divisions</h2>
-                <p>Two interconnected verticals driving innovation at the intersection of engineering and life sciences</p>
-            </div>
-            <div class="divisions-grid">
-                <div class="division-card">
-                    <div class="division-icon">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 6v6l4 2"></path>
-                        </svg>
-                    </div>
-                    <h3>Regenerative Medicine Research</h3>
-                    <p>Pioneering next-generation healthcare by developing and refining advanced biomaterials to promote bone and soft tissue repair and regeneration.</p>
-                    <ul class="division-features">
-                        <li>Bone and Soft Tissue Regeneration Materials</li>
-                        <li>Advanced Biomaterials Development</li>
-                        <li>Tissue Engineering</li>
-                        <li>Clinical R&D</li>
-                    </ul>
-                    <a href="research.html#regenerative" class="link-arrow">Learn more →</a>
-                </div>
-                <div class="division-card">
-                    <div class="division-icon">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                    </div>
-                    <h3>Advanced Manufacturing Research</h3>
-                    <p>Developing revolutionary low-cost 3D printing technologies including FDM, SLA, bio-printing systems, and precision water cutting solutions</p>
-                    <ul class="division-features">
-                        <li>Bio 3D Printer Development</li>
-                        <li>High-Precision FDM & SLA Systems</li>
-                        <li>Water Cutting Technology</li>
-                        <li>Embedded Control Systems</li>
-                    </ul>
-                    <a href="research.html#manufacturing" class="link-arrow">Learn more →</a>
-                </div>
-            </div>
+    <!-- Research Divisions -->
+    <section class="section" aria-labelledby="divisions-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="divisions-heading">Our Research Divisions</h2>
+          <p>Two interconnected verticals driving innovation at the intersection of engineering and life sciences</p>
         </div>
+        
+        <div class="cards-grid">
+          <!-- Regenerative Medicine -->
+          <div class="card division-card">
+            <div class="card-icon">🧬</div>
+            <h3>Regenerative Medicine Research</h3>
+            <p>Pioneering next-generation healthcare by developing and refining advanced biomaterials to promote bone and soft tissue repair and regeneration.</p>
+            <ul class="division-list">
+              <li>Bone and Soft Tissue Regeneration Materials</li>
+              <li>Advanced Biomaterials Development</li>
+              <li>Tissue Engineering</li>
+              <li>Clinical R&D</li>
+            </ul>
+            <a href="research.html#regenerative" class="card-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          
+          <!-- Advanced Manufacturing -->
+          <div class="card division-card">
+            <div class="card-icon">⚙️</div>
+            <h3>Advanced Manufacturing Research</h3>
+            <p>Developing revolutionary low-cost 3D printing technologies including FDM, SLA, bio-printing systems, and precision water cutting solutions</p>
+            <ul class="division-list">
+              <li>Bio 3D Printer Development</li>
+              <li>High-Precision FDM & SLA Systems</li>
+              <li>Water Cutting Technology</li>
+              <li>Embedded Control Systems</li>
+            </ul>
+            <a href="research.html#manufacturing" class="card-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Core Strengths -->
-    <section class="section core-strengths">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why CaliberX Research Labs</h2>
-                <p>Research excellence meets practical innovation</p>
-            </div>
-            <div class="strengths-grid">
-                <div class="strength-item">
-                    <div class="strength-number">01</div>
-                    <h3>R&D-First Approach</h3>
-                    <p>Every solution begins with rigorous research, prototyping, and validation in our state-of-the-art facilities</p>
-                </div>
-                <div class="strength-item">
-                    <div class="strength-number">02</div>
-                    <h3>Multidisciplinary Expertise</h3>
-                    <p>Our team combines mechanical engineering, electrical systems, materials science, and biomedical research</p>
-                </div>
-                <div class="strength-item">
-                    <div class="strength-number">03</div>
-                    <h3>Academic Partnerships</h3>
-                    <p>Collaborating with premier institutions and research organizations to push the boundaries of innovation</p>
-                </div>
-                <div class="strength-item">
-                    <div class="strength-number">04</div>
-                    <h3>IP Generation</h3>
-                    <p>Building a strong portfolio of patents and proprietary technologies in manufacturing and biomaterials</p>
-                </div>
-            </div>
+    <!-- Why CaliberX -->
+    <section class="section" style="background: var(--bg-secondary);" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="why-heading">Why CaliberX Research Labs</h2>
+          <p>Research excellence meets practical innovation</p>
         </div>
+        
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-number">01</span>
+            <h3>R&D-First Approach</h3>
+            <p>Every solution begins with rigorous research, prototyping, and validation in our state-of-the-art facilities</p>
+          </div>
+          
+          <div class="why-card">
+            <span class="why-number">02</span>
+            <h3>Multidisciplinary Expertise</h3>
+            <p>Our team combines mechanical engineering, electrical systems, materials science, and biomedical research</p>
+          </div>
+          
+          <div class="why-card">
+            <span class="why-number">03</span>
+            <h3>Academic Partnerships</h3>
+            <p>Collaborating with premier institutions and research organizations to push the boundaries of innovation</p>
+          </div>
+          
+          <div class="why-card">
+            <span class="why-number">04</span>
+            <h3>IP Generation</h3>
+            <p>Building a strong portfolio of patents and proprietary technologies in manufacturing and biomaterials</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Research Impact -->
-    <section class="section research-impact">
-        <div class="container">
-            <div class="impact-content">
-                <div class="impact-text">
-                    <h2>From Lab to Impact</h2>
-                    <p>Our research philosophy centers on solving real-world challenges through fundamental innovation. We don't just develop technology—we create scalable, low-cost solutions that can transform industries and improve lives.</p>
-                    <p>Located in Chikhli, Gujarat, we're positioned at the heart of India's emerging MedTech and aerospace manufacturing hub, with access to world-class infrastructure and government incentives supporting indigenous R&D.</p>
-                    <a href="capabilities.html" class="btn btn-primary">Explore Our Capabilities</a>
-                </div>
-                <div class="impact-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">2</div>
-                        <div class="stat-label">Research Divisions</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Active Projects</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Indigenous R&D</div>
-                    </div>
-                </div>
-            </div>
+    <!-- Mission Statement -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="section-header" style="max-width: 800px;">
+          <h2 id="mission-heading">From Lab to Impact</h2>
+          <p>
+            Our research philosophy centers on solving real-world challenges through fundamental innovation. We don't just develop technology—we create scalable, low-cost solutions that can transform industries and improve lives.
+          </p>
+          <p style="margin-top: var(--space-md);">
+            Located in Chikhli, Gujarat, we're positioned at the heart of India's emerging MedTech and aerospace manufacturing hub, with access to world-class infrastructure and government incentives supporting indigenous R&D.
+          </p>
+          <a href="capabilities.html" class="btn btn-primary mt-xl">Explore Our Capabilities</a>
         </div>
+        
+        <!-- Stats -->
+        <div class="stats mt-2xl">
+          <div class="stat-item">
+            <h4>2</h4>
+            <p>Research Divisions</p>
+          </div>
+          <div class="stat-item">
+            <h4>5+</h4>
+            <p>Active Projects</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Indigenous R&D</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section" aria-label="Call to action">
-        <div class="container">
-            <div class="cta-card">
-                <h2>Join Our Research Team</h2>
-                <p>We're hiring exceptional engineers and researchers across embedded systems, mechanical design, simulation, biomaterials, and business development</p>
-                <a href="careers.html" class="btn btn-white" aria-label="View open positions">View Open Positions</a>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="cta-section">
+          <h2>Join Our Research Team</h2>
+          <p>We're hiring exceptional engineers and researchers across embedded systems, mechanical design, simulation, biomaterials, and business development</p>
+          <a href="careers.html" class="btn btn-primary btn-lg">View Open Positions</a>
         </div>
+      </div>
     </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img class="footer-logo logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                    <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Research</h4>
-                    <ul>
-                        <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
-                        <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
-                        <li><a href="capabilities.html">Capabilities</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Chikhli, Gujarat, India</p>
-                    <p>Email: <a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
-            </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">CALIBER<span>X</span></span>
+          </a>
+          <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
         </div>
-    </footer>
+        
+        <div class="footer-column">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
+            <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Chikhli, Gujarat, India</li>
+            <li><a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 </html>

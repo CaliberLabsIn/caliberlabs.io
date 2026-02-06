@@ -1,107 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | CaliberX Research Labs</title>
-    
-    <!-- Favicon - SVG with PNG fallback -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="alternate icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaliberX Research Labs publications - Research papers, patents, and technical publications.">
+  <title>Publications | CaliberX Research Labs</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="navbar-logo">
-                    <img class="logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                </a>
-                <button class="mobile-menu-toggle">
-                    <span></span><span></span><span></span>
-                </button>
-                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="capabilities.html">Capabilities</a></li>
-                    <li><a href="publications.html" class="active">Publications</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
-    <main id="main-content">
-    <section class="page-hero" aria-label="Page header">
-        <div class="container">
-            <h1>Publications & Innovation</h1>
-            <p>Research papers, patents, and technical contributions</p>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-text">CALIBER<span>X</span></span>
+        </a>
+        <nav class="nav">
+          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="research.html" class="nav-link">Research</a></li>
+            <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+            <li><a href="publications.html" class="nav-link active">Publications</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="research-hero">
+      <div class="container">
+        <div class="section-header">
+          <h1>Publications</h1>
+          <p>Our research contributions to the scientific community</p>
         </div>
+      </div>
     </section>
 
-    <section class="section" aria-label="Publications content">
-        <div class="container">
-            <div class="content-narrow text-center">
-                <h2 class="mb-lg">Building Our Research Portfolio</h2>
-                <p class="text-large mb-lg">
-                    As a research-driven organization, we are committed to publishing our findings in top-tier journals and conferences. We actively support our team members in presenting their work to the scientific community.
-                </p>
-                <p class="text-large mb-xl">
-                    Our IP portfolio is growing, with multiple patent applications in progress across our manufacturing and biomaterials research divisions.
-                </p>
-                <div class="section-bg-light">
-                    <h3 class="mb-sm" style="color: var(--primary-cyan);">Publications Coming Soon</h3>
-                    <p>Check back for updates on our latest research papers and patent filings.</p>
-                </div>
-            </div>
+    <!-- Publications List -->
+    <section class="section">
+      <div class="container" style="max-width: 900px;">
+        
+        <div class="section-header text-left" style="margin-bottom: var(--space-xl);">
+          <h2>Research Papers</h2>
         </div>
+
+        <div class="publication-item">
+          <span class="publication-tag">Biomaterials</span>
+          <h3 class="mt-sm">Development of Bioactive Glass Scaffolds for Alveolar Bone Regeneration</h3>
+          <p class="mt-sm">Investigation of sol-gel derived bioactive glass compositions for dental bone regeneration applications, with focus on mechanical properties and bioactivity.</p>
+          <div class="publication-meta">
+            <span>📅 2025 (In Preparation)</span>
+            <span>👥 CaliberX Research Team</span>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="publication-tag">Manufacturing</span>
+          <h3 class="mt-sm">Low-Cost Bio-Extrusion System for Research Applications</h3>
+          <p class="mt-sm">Design and development of an accessible bio-printing platform using off-the-shelf components and custom control systems.</p>
+          <div class="publication-meta">
+            <span>📅 2025 (In Preparation)</span>
+            <span>👥 CaliberX Research Team</span>
+          </div>
+        </div>
+
+        <div class="section-header text-left mt-2xl" style="margin-bottom: var(--space-xl);">
+          <h2>Patents & IP</h2>
+        </div>
+
+        <div class="publication-item">
+          <span class="publication-tag">Patent Pending</span>
+          <h3 class="mt-sm">Novel Extrusion Mechanism for Multi-Material Bio-Printing</h3>
+          <p class="mt-sm">Patent application for a precision extrusion system enabling seamless switching between multiple bioinks during 3D printing.</p>
+          <div class="publication-meta">
+            <span>📅 2025</span>
+            <span>🇮🇳 Indian Patent Office</span>
+          </div>
+        </div>
+
+        <div class="section-header text-left mt-2xl" style="margin-bottom: var(--space-xl);">
+          <h2>Technical Reports</h2>
+        </div>
+
+        <div class="publication-item">
+          <span class="publication-tag">White Paper</span>
+          <h3 class="mt-sm">State of Bio 3D Printing in India: Opportunities and Challenges</h3>
+          <p class="mt-sm">Comprehensive analysis of the Indian bio-printing landscape, including market opportunities, regulatory considerations, and technology gaps.</p>
+          <div class="publication-meta">
+            <span>📅 2024</span>
+            <span>📄 Internal Report</span>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="publication-tag">Technical Note</span>
+          <h3 class="mt-sm">Benchmarking Open-Source 3D Printer Firmware for Research Applications</h3>
+          <p class="mt-sm">Comparative analysis of Marlin, Klipper, and RepRapFirmware for precision research applications, with recommendations for customization.</p>
+          <div class="publication-meta">
+            <span>📅 2024</span>
+            <span>📄 Internal Report</span>
+          </div>
+        </div>
+
+      </div>
     </section>
-    </main>
 
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img class="footer-logo logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                    <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Research</h4>
-                    <ul>
-                        <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
-                        <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
-                        <li><a href="capabilities.html">Capabilities</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Chikhli, Gujarat, India</p>
-                    <p>Email: <a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
-            </div>
+    <!-- Coming Soon -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <h2>More Coming Soon</h2>
+          <p>Our research team is actively working on multiple publications across biomaterials, manufacturing, and control systems. Check back for updates or subscribe to our mailing list.</p>
+          <a href="contact.html" class="btn btn-primary mt-lg">Stay Updated</a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">CALIBER<span>X</span></span>
+          </a>
+          <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
+        </div>
+        <div class="footer-column">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
+            <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Chikhli, Gujarat, India</li>
+            <li><a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

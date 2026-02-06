@@ -1,133 +1,220 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capabilities | CaliberX Research Labs</title>
-    
-    <!-- Favicon - SVG with PNG fallback -->
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="alternate icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaliberX Research Labs capabilities - State-of-the-art facilities for advanced manufacturing and biomaterials research.">
+  <title>Capabilities | CaliberX Research Labs</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="navbar-logo">
-                    <img class="logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                </a>
-                <button class="mobile-menu-toggle">
-                    <span></span><span></span><span></span>
-                </button>
-                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="capabilities.html" class="active">Capabilities</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
-    <main id="main-content">
-    <section class="page-hero" aria-label="Page header">
-        <div class="container">
-            <h1>Our Capabilities</h1>
-            <p>State-of-the-art facilities and expertise across engineering disciplines</p>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-text">CALIBER<span>X</span></span>
+        </a>
+        <nav class="nav">
+          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="research.html" class="nav-link">Research</a></li>
+            <li><a href="capabilities.html" class="nav-link active">Capabilities</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="research-hero">
+      <div class="container">
+        <div class="section-header">
+          <h1>Our Capabilities</h1>
+          <p>State-of-the-art facilities and expertise to transform ideas into reality</p>
         </div>
+      </div>
     </section>
 
-    <section class="section" aria-label="Core competencies">
-        <div class="container">
-            <div class="content-centered">
-                <h2 class="mb-xl">Core Competencies</h2>
-                <div class="grid-auto-fit mt-xl">
-                    <div class="capability-card">
-                        <h3>Mechanical Engineering</h3>
-                        <p>CAD/CAM, FEA, kinematics, precision mechanics, DFM</p>
-                    </div>
-                    <div class="capability-card">
-                        <h3>Embedded Systems</h3>
-                        <p>PCB design, firmware development, real-time control, sensor integration</p>
-                    </div>
-                    <div class="capability-card">
-                        <h3>Materials Science</h3>
-                        <p>Biomaterials, ceramics, composites, material characterization</p>
-                    </div>
-                    <div class="capability-card">
-                        <h3>Software Development</h3>
-                        <p>Simulation, AI/ML, distributed systems, control algorithms</p>
-                    </div>
-                    <div class="capability-card">
-                        <h3>Biomedical Research</h3>
-                        <p>Tissue engineering, biocompatibility, clinical validation</p>
-                    </div>
-                    <div class="capability-card">
-                        <h3>Prototyping & Testing</h3>
-                        <p>Rapid prototyping, performance validation, quality assurance</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Capabilities Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">🖨️</div>
+            <h3>3D Printing Systems</h3>
+            <p>Custom-built FDM, SLA, and bio-printing platforms with precision control systems. Our in-house developed printers offer research-grade accuracy at accessible price points.</p>
+            <ul class="division-list">
+              <li>Multi-material extrusion</li>
+              <li>Temperature-controlled beds</li>
+              <li>Sub-100 micron resolution</li>
+              <li>Large build volumes</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">🔧</div>
+            <h3>Embedded Systems Lab</h3>
+            <p>Full-stack embedded development from PCB design to firmware. We specialize in motion control, sensor integration, and real-time systems.</p>
+            <ul class="division-list">
+              <li>STM32 & ESP32 development</li>
+              <li>Custom PCB fabrication</li>
+              <li>Motor driver design</li>
+              <li>IoT connectivity</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">🔬</div>
+            <h3>Materials Testing</h3>
+            <p>Comprehensive materials characterization for biomaterials and engineering materials. We validate mechanical, thermal, and biological properties.</p>
+            <ul class="division-list">
+              <li>Tensile & compression testing</li>
+              <li>Thermal analysis (TGA/DSC)</li>
+              <li>Surface characterization</li>
+              <li>Biocompatibility screening</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">💻</div>
+            <h3>CAD/CAE Simulation</h3>
+            <p>Advanced computational modeling for design optimization and validation. From FEA to CFD, we simulate before we fabricate.</p>
+            <ul class="division-list">
+              <li>SolidWorks & Fusion 360</li>
+              <li>ANSYS structural analysis</li>
+              <li>MATLAB/Simulink modeling</li>
+              <li>Topology optimization</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">🧪</div>
+            <h3>Biomaterials Synthesis</h3>
+            <p>Synthesis and processing of bioactive ceramics, polymers, and composites. Our wet lab supports formulation development and quality control.</p>
+            <ul class="division-list">
+              <li>Hydroxyapatite synthesis</li>
+              <li>Polymer blending</li>
+              <li>Scaffold fabrication</li>
+              <li>Sterilization protocols</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Precision Cutting</h3>
+            <p>Water jet and laser cutting capabilities for prototyping and production. We handle metals, composites, ceramics, and polymers.</p>
+            <ul class="division-list">
+              <li>Abrasive waterjet cutting</li>
+              <li>Complex geometry handling</li>
+              <li>Tight tolerance machining</li>
+              <li>Batch production</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="section" style="background: var(--bg-light);">
-        <div class="container">
-            <div class="content-narrow text-center">
-                <h2 class="mb-lg">Lab Facilities</h2>
-                <p class="text-large mb-xl">Our Chikhli facility houses advanced equipment for R&D, prototyping, and small-scale manufacturing across both research divisions.</p>
-                <p>Detailed facility information available upon request for partnership discussions.</p>
-            </div>
+    <!-- Infrastructure -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Infrastructure & Location</h2>
+          <p>Strategically located in Gujarat's emerging tech corridor</p>
         </div>
+        
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div class="why-card">
+            <span class="why-number">📍</span>
+            <h3>Strategic Location</h3>
+            <p>Chikhli, Gujarat positions us near major manufacturing hubs, ports, and academic institutions. Easy access to Mumbai and Ahmedabad industrial corridors.</p>
+          </div>
+          
+          <div class="why-card">
+            <span class="why-number">🏭</span>
+            <h3>Dedicated Facility</h3>
+            <p>Purpose-built R&D space with separate zones for electronics, mechanical assembly, materials processing, and testing. Climate-controlled environments for sensitive work.</p>
+          </div>
+          
+          <div class="why-card">
+            <span class="why-number">🤝</span>
+            <h3>Government Support</h3>
+            <p>Operating under Gujarat's favorable policies for R&D startups, with access to state incentives, grants, and incubation support.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    </main>
 
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img class="footer-logo logo-img" src="images/logo.svg" alt="CaliberX Research Labs" data-light-src="images/logo.svg" data-light-fallback="images/logo.png" data-dark-src="images/darkmode_logo.svg" data-dark-fallback="images/darkmode_logo.png" onerror="this.onerror=null; this.src='images/logo.png';">
-                    <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Research</h4>
-                    <ul>
-                        <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
-                        <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
-                        <li><a href="capabilities.html">Capabilities</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Chikhli, Gujarat, India</p>
-                    <p>Email: <a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
-            </div>
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section">
+          <h2>Need Custom R&D Support?</h2>
+          <p>We offer contract research, prototyping services, and technical consulting. Let's discuss how we can help with your project.</p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">CALIBER<span>X</span></span>
+          </a>
+          <p>Pioneering research in advanced manufacturing and regenerative medicine</p>
+        </div>
+        <div class="footer-column">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html#regenerative">Regenerative Medicine</a></li>
+            <li><a href="research.html#manufacturing">Advanced Manufacturing</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>Chikhli, Gujarat, India</li>
+            <li><a href="mailto:careers@caliberlab.in">careers@caliberlab.in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CaliberX Research Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
